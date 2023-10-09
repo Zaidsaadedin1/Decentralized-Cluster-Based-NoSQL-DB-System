@@ -1,0 +1,55 @@
+version: '3'
+services:
+  bootstrapping-server:
+    build: ./BootsTrapingNode
+    ports:
+      - "1010:1010"
+    networks:
+      client_server_network:
+        ipv4_address: 172.21.0.4
+
+  vm1:
+    build: ./VmOne
+    ports:
+      - "1011:1011"
+    networks:
+      client_server_network:
+        ipv4_address: 172.21.0.6
+    depends_on:
+      - bootstrapping-server
+      - affinity
+    volumes:
+      - C:\Users\zaids\Desktop\Capson\VmOne:/app/config
+  vm2:
+    build: ./VmTwo
+    ports:
+      - "1012:1012"
+    networks:
+        client_server_network:
+          ipv4_address: 172.21.0.3
+    depends_on:
+      - bootstrapping-server
+      - affinity
+    volumes:
+      - C:\Users\zaids\Desktop\Capson\VmTwo:/app/config
+
+
+  affinity:
+    build: ./AffinityVm
+    ports:
+      - "1013:1013"
+      - "1017:1017"
+    networks:
+      client_server_network:
+        ipv4_address: 172.21.0.9
+    depends_on:
+      - bootstrapping-server
+    volumes:
+      - C:\Users\zaids\Desktop\Capson\AffinityVm:/app/config
+
+
+networks:
+  client_server_network:
+    ipam:
+      config:
+      - subnet: 172.21.0.2/16

@@ -1,0 +1,1 @@
+[{"appName":"1","dataBases":[]},{"appName":"2","dataBases":[]},{"appName":"1","dataBases":[{"databaseName":"d","tables":[{"tableName":"t","documents":{"1":{"documentData":{"age":"1444"}}},"latestDocumentId":2}]}]},{"appName":"2","dataBases":[]},{"appName":"3","dataBases":[]}]
