@@ -1,0 +1,1 @@
+[{"appName":"Bank","dataBases":[{"databaseName":"employee","tables":[{"tableName":"employee","documents":{"2":{"documentData":{"name":"khaled","age":"25"}}},"latestDocumentId":3}]}]},{"appName":"pizza store ","dataBases":[]},{"appName":"bank","dataBases":[{"databaseName":"employee","tables":[{"tableName":"salary","documents":{},"latestDocumentId":1}]}]}]
