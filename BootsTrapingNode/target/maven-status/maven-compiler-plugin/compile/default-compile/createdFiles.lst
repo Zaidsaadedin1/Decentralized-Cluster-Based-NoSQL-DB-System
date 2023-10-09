@@ -1,0 +1,12 @@
+org\example\ClientRegistrationManager.class
+org\example\AdminRegistrationManager.class
+org\example\ClientLoginManager.class
+org\example\Admin.class
+org\example\ClientHandler.class
+org\example\ClientRegistrationManager$1.class
+org\example\Client.class
+org\example\RunBootStrappingServer.class
+org\example\RedirectManager.class
+org\example\AdminLoginManager.class
+org\example\BootStrappingServer.class
+org\example\AdminRegistrationManager$1.class
