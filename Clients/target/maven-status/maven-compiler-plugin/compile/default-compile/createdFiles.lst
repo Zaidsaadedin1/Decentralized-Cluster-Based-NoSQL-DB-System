@@ -1,0 +1,8 @@
+org\example\ApplicationHandler.class
+org\example\ClientsSocket.class
+org\example\DocumentHandler.class
+org\example\HandleClientCommunications.class
+org\example\TableHandler.class
+org\example\DataBaseHandler.class
+org\example\HandleClientCommunicationsWithNewVm.class
+org\example\RunClients.class
